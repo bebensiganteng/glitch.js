@@ -114,7 +114,8 @@
 		// so, by initializing `i` to a random number between 0 and 2,
 		// and incrementing by 4 on each iteration, we can replace only
 		// a single channel in the image
-		for(i = getRandInt(0, 3), _len = srcData.length; i < _len; i += 4) {
+		//for(i = getRandInt(0, 3), _len = srcData.length; i < _len; i += 4) {
+		for(i = 0, _len = srcData.length; i < _len; i += 4) {
 			data[i+channelOffset] = srcData[i];
 		}
 
